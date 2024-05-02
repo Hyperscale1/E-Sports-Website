@@ -1,0 +1,249 @@
+:root {
+    --primary: #2F88B4;
+    --secondary: #101e25;
+    --bg: #16191E;
+    --success: #2ED573;
+    --warning: #FFD75E;
+    --danger: #FF4757;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+hr {
+    border: none;
+    border-top: 2px solid;
+    color: #fff;
+    height: 1px;
+    width: 50%;
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+
+    color: #eee8e8;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 0.313rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #181818b6;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(83, 80, 80);
+	transition: 0.3s;
+    border-radius: 0.5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+code {
+	font-family: Consolas, "courier new";
+	color: white;
+	background-color: #292424;
+	border-radius: 0.3em;
+	padding: 0.25rem;
+	font-size: 105%;
+}
+
+error {
+	font-family: Consolas, "courier new";
+	color: var(--danger);
+	background-color: #161515;
+	border-radius: 0.3em;
+	padding: 0.25rem;
+	font-size: 105%;
+}
+
+body {
+	background-color: var(--bg);
+    margin: 0;
+}
+
+
+.navbar {
+    overflow: hidden;
+    position: relative;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+/* Style the navigation bar links */
+.navbar .navbar-center {
+    animation: fadeIn 5s;
+    text-align: center;
+    padding: 1.25rem 1.25rem;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.navbar .navbar-center a {
+	color: #ffffffe3;
+    text-align: center;
+    padding: 0.938rem 1.25rem;
+	border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.5s;
+}
+
+.navbar i {
+	color: #ffffff;
+}
+
+.navbar .navbar-center a {
+	color: #ffffff;
+}
+
+.navbar  a:hover {
+	background-color: #ffffff3b;
+}
+
+.navbar .navbar-right {
+    animation: fadeIn 5s;
+    text-align: right;
+    padding: 1.25rem 1.25rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.navbar .navbar-right a {
+	color: #ffffffe3;
+    text-align: center;
+    padding: 0.938rem 1.25rem;
+	border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.5s;
+}
+
+
+
+.navbar .img01 img{
+    cursor: pointer; 
+    height: 4rem; 
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -4rem;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.col-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-main-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-main-1 {
+    flex: 1;
+    padding: 1rem;
+}
+
+.text-center-head {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.text-center {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80%;
+    text-wrap: wrap;
+}
+
+
+/* The team */
+
+.parent01-theteam {
+    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.parent01-theteam .text02 {
+    margin-top: 3rem;
+    font-size: 3em;
+    text-align: center;
+}
+
+.parent01-theteam .container01-theteam {
+    background-color: var(--primary);
+	width: 20rem;
+	padding: 2rem;
+	margin: 2rem;
+	min-height: 25rem;
+	border-radius: 1rem;
+    transition: box-shadow .3s;
+    transition: .3s;
+    box-shadow: 0rem 0rem 0.625rem 0rem rgba(0, 0, 0, 0.808);
+}
+
+.parent01-theteam .container01-theteam .text01 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.parent01-theteam .container01-theteam .img02 {
+    cursor: pointer; 
+    height: 8rem; 
+    width: auto;
+    border-radius: 8rem;
+}
+
+.parent01-theteam .container01-theteam .text02 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.parent01-theteam .container01-theteam .text03 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
